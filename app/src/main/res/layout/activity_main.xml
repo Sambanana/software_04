@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Please SignUp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/error_message"/>
+
+<!--    Enter your username-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your username"
+        android:id="@+id/username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your email"
+        android:id="@+id/email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your username"
+        android:id="@+id/choose_password"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Confirm Password"
+        android:id="@+id/confirm_password"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create your free account"
+        android:id="@+id/sign_up"
+        android:onClick="create_account"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="not having an account SignUp"
+        android:gravity="center"
+        android:onClick="goToSignIn"/>
+
+
+
+</LinearLayout>

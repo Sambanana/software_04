@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:gravity="center"
+        android:layout_above="@id/place"
+        android:layout_marginBottom="20dp"
+        android:textSize="15dp"
+        android:id="@+id/error_message"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Please SignIn to your account"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/place"
+        android:layout_above="@+id/username"
+        android:layout_marginBottom="20dp"/>
+
+<!--    username field-->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter your username" />
+
+<!--    password field-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your password"
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Please SignIn"
+        android:id="@+id/signBtn"
+        android:onClick="logIn"
+        android:layout_below="@id/password"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="not having an account SignUp"
+        android:layout_below="@id/signBtn"
+        android:gravity="center"
+        android:onClick="goToSignUp"/>
+
+</RelativeLayout>
